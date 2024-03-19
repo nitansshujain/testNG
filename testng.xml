@@ -1,2 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd"><suite name="All Test Suite"><test verbose="2" preserve-order="true" name="C:/Users/nitanssj/IdeaProjects/testNG/src/test/java/AnnotationsTest.java"><classes/></test></suite>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="classes" thread-count="2">
+    <test name="Test1" >
+        <classes>
+            <class name="AnnotationsTest" />
+        </classes>
+    </test> <!-- Test -->
+    <test name="Test2" >
+        <classes>
+            <class name="TestClass" />
+        </classes>
+    </test> <!-- Test -->
+
+</suite> <!-- Suite -->
